@@ -1,3 +1,4 @@
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -21,8 +22,6 @@
 }
 .logo {
   width: 183px;
-  height: 32px;
-
 }
 .logo_place_header {
   position: absolute;
@@ -30,17 +29,22 @@
   top: 30px;
   left: 64px;
   margin: auto;
-  
+  height: 32px;
 }
 .header__title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 64px;
   align-self: center;
   width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
+  z-index: 2;
 }
 .header__subtitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -48,6 +52,7 @@
   font-size: 18px;
   font-weight: normal;
   width: 388px;
+  z-index: 2;
 }
 
 .header__link {
@@ -71,6 +76,7 @@
   position: absolute;
   top:64px;
   right: 0px;
+
 }
 .description {
   display: flex;
@@ -101,18 +107,16 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-.two-columns__paragraph-one {
   margin-top: 0px;
-}
-.two-columns__paragraph-two {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.two-columns__paragraph-three {
   margin-bottom: 0px;
+
 }
-.two-columns__paragraph-span {
+.two-columns__paragraph:nth-of-type(2n){
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.two-columns__span-accent {
   font-weight: bold;
 }
 .section-title {
@@ -133,46 +137,30 @@
 }
 .table {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   width: 1100px;
   margin-bottom: 100px;
-
-}
-
-.table__cells {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+
 .table__cell {
   width: 250px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   margin-top: 60px;
 }
 
 .table__heading {
   margin-top: 0px;
-  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-}
-
-.table__cell-two{
-  margin-top: 0px;
   margin-bottom: 0px;
 }
  .table__text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
- }
-
- .table__minitext {
   margin-top: 20px;
   margin-bottom: 0px;
   line-height: 1.2;
@@ -182,13 +170,12 @@
 
 .feynman{
   background-color: #f2f2f2;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
+  min-height: 890px;
   position: relative;
   margin-bottom: 0px;
   z-index: 0;
   overflow: hidden;
+
 }
 
  .feynman__title {
@@ -201,6 +188,7 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 0px;
+  margin-top: 0px;
  }
  
 
@@ -210,6 +198,7 @@
   font-size: 36px;
   font-weight: normal;
   margin-top: 70px;
+  margin-bottom: 0px;
  }
 
  .feynman__pic {
@@ -237,31 +226,39 @@
   margin-top: 0px;
   position: relative;
   overflow: hidden;
-  z-index: -3;
+  z-index: 1;
 }
  .section-title_theme_dark {
   color: white;
   margin-top: 90px;
+  
+  
 }
  .section-subtitle_theme_dark {
   color: white;
+  
 }
- .table__theme_dark {
+ .table_theme_dark {
   margin-bottom: 90px;
-  z-index: 2;
+  
 }
  .table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
   margin-bottom: 0px;
+  
  }
  .table__heading_theme_dark{
   color: white;
+  
 }
  .table__text_theme_dark{
   color: white;
+  margin-bottom: 0px;
+  
 }
- .kaufman__img {
+ .kaufman__triangle {
+  background-image: url("C:/Users/crist/devv/first-project/how-to-learn/images/kaufman-triangle.svg");
   background-size: contain;
   width: 877px;
   height: 877px;
@@ -277,7 +274,9 @@
   display: flex;
   color: white;
 }
- 
+.logo_place_footer {
+  height: 35px;
+}
 .footer__columns{
   margin: auto;
   justify-content: space-between;
@@ -295,6 +294,10 @@
   justify-content: space-between;
 
 }
+.footer__column_content_social{
+  display: block;
+
+}
 .footer__author{
   margin-bottom: 18px;
   line-height: 25px;
@@ -308,8 +311,15 @@
   font-size: 18px;
   font-weight: bold;
 }
- 
+
 .footer__column-links {
+  padding-bottom: 16px;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.footer__column-link {
   line-height: 30px;
   font-weight: normal;
   font-size: 18px;
@@ -317,13 +327,10 @@
   margin-bottom: 0px;
   text-decoration: none;
   color: white;
+ 
 }
 
-.footer__column-link {
-  padding-bottom: 16px;
-}
-
-.footer__soc {
+.footer__social {
   width: 16px;
   height: 16px;
   margin-right: 10px;
