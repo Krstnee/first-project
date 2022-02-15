@@ -258,7 +258,7 @@
   
 }
  .kaufman__triangle {
-  background-image: url("C:/Users/crist/devv/first-project/how-to-learn/images/kaufman-triangle.svg");
+  background-image: url("../images/kaufman-triangle.svg");
   background-size: contain;
   width: 877px;
   height: 877px;
@@ -317,6 +317,8 @@
   margin-left: 0px;
   padding-left: 0px;
   list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .footer__column-link {
@@ -330,7 +332,7 @@
  
 }
 
-.footer__social {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
