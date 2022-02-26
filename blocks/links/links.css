@@ -1,0 +1,27 @@
+@keyframes links {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.header__link:hover {
+  animation: links 1s ease;
+}
+.khan__buy-link:hover {
+  animation: links 1s ease;
+}
+.feynman__link:hover{
+  animation: links 1s ease;
+}
+.resources__logo:hover {
+  animation: links 1s ease;
+}
+.footer__column-link:hover {
+  animation: links 1s ease;
+}
+.footer__social-icon:hover{
+  animation: links 1s ease;
+}
