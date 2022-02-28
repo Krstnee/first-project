@@ -1,7 +1,13 @@
 .footer__social-icon {
-    width: 16px;
+    max-width: 16px;
     height: 16px;
     margin-right: 10px;
-   
+    vertical-align: middle;
+    opacity: 1;
+    transition: opacity 2s;
+  }
+
+  .footer__social-icon:hover{
+    opacity: 0.5;
   }
   
